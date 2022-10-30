@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import {Box} from '@chakra-ui/react'
+import PortHeader from './components/PortHeader';
+import ProjectContain from './components/ProjectContain';
+import About from './components/About';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box margin='0 auto' padding='0px 30px' maxW='1300px'>
+      <PortHeader />
+      <About />
+      <ProjectContain />
+      <Footer />
+    </Box>
   );
 }
 
