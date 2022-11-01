@@ -5,7 +5,7 @@ import Navigation from './Navigation'
 const PortHeader = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
-        <Flex as='header' pos='sticky' mt={5}>
+        <Flex as='header' pos='sticky' top='0' zIndex='2' pt={5} backgroundColor='white'>
             <Heading as='h1' size='sm'>Cayla.</Heading>
             <Spacer />
             <Navigation/>

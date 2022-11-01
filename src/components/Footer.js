@@ -11,7 +11,7 @@ const Footer = () => {
                 <Button as="a" href="#" >Resume</Button>
             </ButtonGroup>
 
-            <Flex mt={3}>Made With ❤ by Cayla Franklin</Flex>
+            <Flex mt={3} mb={3}>Made With ❤ by Cayla Franklin</Flex>
 
         </Box>
     )
