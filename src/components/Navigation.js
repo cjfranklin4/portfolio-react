@@ -5,9 +5,9 @@ const Navigation = () => {
     return (
         <Box>
             <Flex as='nav' gap='2' mr={2} display={['none', 'flex']}>
-                <Button href="#" size="sm" variant='ghost'>About</Button>
-                <Button href="#" size="sm" variant='ghost'>Work</Button>
-                <Button href="#" size="sm" variant='ghost'>Resume</Button>
+                <Button as="a" href="/" size="sm" variant='ghost'>About</Button>
+                <Button as="a" href="#work" size="sm" variant='ghost'>Work</Button>
+                <Button as="a" target='_blank' href="https://drive.google.com/file/d/1iCL2FwoJE-EUOPHCiMXNEnW5a2R5__5f/view?usp=sharing" size="sm" variant='ghost'>Resume</Button>
             </Flex>
             {/* <Flex as='nav' gap='2' mr={2} display={['flex', 'none']}>
                 
@@ -25,13 +25,13 @@ const Navigation = () => {
                     size='sm'
                 />
                 <MenuList>
-                    <MenuItem as='a' href="#">
+                    <MenuItem as='a' href="/">
                     About
                     </MenuItem>
-                    <MenuItem>
+                    <MenuItem as='a' href="#work">
                     Work
                     </MenuItem>
-                    <MenuItem>
+                    <MenuItem as='a' href="https://drive.google.com/file/d/1iCL2FwoJE-EUOPHCiMXNEnW5a2R5__5f/view?usp=sharing">
                     Resume
                     </MenuItem>
                 </MenuList>

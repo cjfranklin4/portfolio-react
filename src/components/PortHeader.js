@@ -1,12 +1,14 @@
-import {IconButton, Heading, Flex, Spacer, useColorMode } from '@chakra-ui/react'
+import {IconButton, Heading, Flex, Spacer, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import {SunIcon, MoonIcon } from '@chakra-ui/icons'
 import Navigation from './Navigation'
 
 const PortHeader = () => {
     const { colorMode, toggleColorMode } = useColorMode()
+    const bg = useColorModeValue('white', 'gray.800')
+    const color = useColorModeValue('black', 'white')
     return (
-        <Flex as='header' pos='sticky' top='0' zIndex='2' pt={5} backgroundColor='white'>
-            <Heading as='h1' size='sm'>Cayla.</Heading>
+        <Flex as='header' pos='sticky' top='0' zIndex='2' pt={5} pb={2} backgroundColor={bg} color={color}>
+            <Heading as='h1' size='sm' alignSelf='center'>Cayla.</Heading>
             <Spacer />
             <Navigation/>
             <IconButton 
